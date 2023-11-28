@@ -5,6 +5,10 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #000915;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 a {
@@ -14,10 +18,11 @@ a {
 .center {
   padding-right: 120px;
   padding-left: 120px;
+  width: 1440px;
+  box-sizing: border-box;
 }
 
 .header {
-  background-color: #000915;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(img/back_top.jpg);
@@ -79,17 +84,17 @@ a {
   border-style: none;
   position: relative;
 }
-.product__box_game1 {
+.product__box:first-child {
   background-image: url(img/back_game1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.product__box_game2 {
+.product__box:nth-child(2) {
   background-image: url(img/back_game2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.product__box_game3 {
+.product__box:last-child {
   background-image: url(img/back_game3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
