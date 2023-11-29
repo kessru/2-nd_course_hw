@@ -36,7 +36,7 @@ alert(age);
 
 const user = {
     name: 'Lisa',
-    age: 28,
+    age: 33,
     work: 'engineer',
     isAdmin: false,
 
