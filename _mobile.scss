@@ -1,0 +1,54 @@
+@media (max-width: 768px) {
+    body {
+        display: block;
+    }
+
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+        width: auto;
+
+    }
+
+    .header {
+        height: 735px;
+        border: none;
+        display: flex;
+        box-sizing: border-box;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        background-position: 32%;
+
+        &__welcome {
+            font-size: 32px;
+            line-height: 39px;
+            text-align: center;
+            padding-top: 238.69px;
+            width: 343px;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            width: 343px;
+            margin-top: 35px;
+        }
+
+        &__btn {
+            margin-top: 32px;
+        }
+    }
+
+    .product {
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+
+        &__box {
+            width: 343px;
+        }
+    }
+}
