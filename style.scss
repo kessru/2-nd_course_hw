@@ -71,7 +71,6 @@ a {
         text-align: center;
         transition: all 0.3s;
 
-
         &:hover {
             background-color: #EB443F;
             cursor: url(img/pointer.svg), auto;
@@ -81,7 +80,6 @@ a {
 }
 
 .product {
-    background-color: #000915;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 32px;
@@ -97,7 +95,6 @@ a {
         border-style: none;
         position: relative;
         transition: all .3s;
-
 
         &:first-child {
             background-image: url(img/back_game1.jpg);
@@ -123,8 +120,13 @@ a {
             cursor: url(img/pointer.svg), auto;
         }
 
-
+        &:hover {
+            outline: 3px solid #44D2FF;
+            cursor: url(img/pointer.svg), auto;
+        }
     }
+
+
 
     &__name {
         font-size: 24px;
@@ -137,6 +139,68 @@ a {
         bottom: 32px;
         left: 32px;
     }
+}
+
+.gameCenter {
+    padding-top: 233.5px;
+    padding-bottom: 233.5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &__header {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-bottom: 32px;
+        color: #fff;
+    }
+
+    &__text {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        width: 584px;
+        display: block;
+    }
+
+    &__btn {
+        width: 234.06px;
+        height: 48.6px;
+        margin-top: 32px;
+        border-radius: 30px;
+        background-color: #9C0332;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: center;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: #EB443F;
+            cursor: url(img/pointer.svg), auto;
+
+        }
+    }
+
+    &__logo {
+        width: 485px;
+        height: 333px;
+        background-image: url(img/gameCenter_logo.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: #fff;
+    }
+
 }
 
 @import 'mobile';

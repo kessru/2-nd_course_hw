@@ -20,7 +20,7 @@
         flex-wrap: wrap;
         align-content: center;
         align-items: center;
-        background-position: 32%;
+        background-position: center;
 
         &__welcome {
             font-size: 32px;
@@ -51,4 +51,41 @@
             width: 343px;
         }
     }
+    .gameCenter {
+        padding-top: 51px;
+        padding-bottom: 85px;
+        flex-direction: column;
+        gap: 64px;
+
+        &__body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        &__header {
+            font-size: 32px;
+            line-height: 39px;
+            text-align: center;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            max-width: 343px;
+        }
+
+        &__logo {
+            width: 344px;
+            height: 236px;
+        }
+
+    }
 }
+
+@media (max-width: 600px) {
+    .header {
+        background-position: 32%;
+    }

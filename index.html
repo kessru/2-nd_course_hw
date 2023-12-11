@@ -15,8 +15,8 @@
 <body>
     <header class="header center">
         <h1 class="header__welcome">Добро пожаловать на мой сайт !</h1>
-        <text class="header__text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <span
-                class="header__text_bold">поехали</span> и <span class="header__text_bold">приступай</span></text>
+        <p class="header__text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <span
+                class="header__text_bold">поехали</span> и <span class="header__text_bold">приступай</span></p>
         <button type="submit" class="header__btn">Поехали!</button>
     </header>
     <section class="product center">
@@ -30,7 +30,17 @@
             <h2 class="product__name">Игра 3</h2>
         </div>
     </section>
-
+    <section class="gameCenter center">
+        <div class="gameCenter__body">
+            <h1 class="gameCenter__header">Времена года!</h1>
+            <p class="gameCenter__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к
+                какому
+                времени года он относится</p>
+            <button class="gameCenter__btn" onclick="game1()">Играть!</button>
+        </div>
+        <div class="gameCenter__logo"></div>
+    </section>
+    <script src="game1.js"></script>
 </body>
 
 </html>
