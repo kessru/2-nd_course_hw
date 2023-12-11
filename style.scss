@@ -112,6 +112,12 @@ a {
             background-image: url(img/back_game3.jpg);
             background-repeat: no-repeat;
             background-size: cover;
+
+        }
+
+        &:hover {
+            outline: 3px solid #44D2FF;
+            cursor: url(img/pointer.svg), auto;
         }
 
         &:hover {
@@ -196,6 +202,5 @@ a {
     }
 
 }
-
 
 @import 'mobile';
