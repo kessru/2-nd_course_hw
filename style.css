@@ -108,6 +108,10 @@ a {
   outline: 3px solid #44D2FF;
   cursor: url(img/pointer.svg), auto;
 }
+.product__box:hover {
+  outline: 3px solid #44D2FF;
+  cursor: url(img/pointer.svg), auto;
+}
 .product__name {
   font-size: 24px;
   font-weight: 600;
@@ -124,6 +128,7 @@ a {
   padding-top: 233.5px;
   padding-bottom: 233.5px;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -169,10 +174,13 @@ a {
 .gameCenter__logo {
   width: 485px;
   height: 333px;
-  background-image: url(img/gameCenter_logo.svg);
   background-repeat: no-repeat;
   background-size: contain;
   color: #fff;
+  background-image: url(img/gameCenter_logo.svg);
+}
+.gameCenter__logo2 {
+  background-image: url(img/game2_logo.svg);
 }
 
 @media (max-width: 768px) {
@@ -225,6 +233,9 @@ a {
     padding-bottom: 85px;
     flex-direction: column;
     gap: 64px;
+  }
+  .gameCenter__2 {
+    flex-direction: column-reverse;
   }
   .gameCenter__body {
     display: flex;
