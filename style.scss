@@ -145,6 +145,7 @@ a {
     padding-top: 233.5px;
     padding-bottom: 233.5px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -195,10 +196,14 @@ a {
     &__logo {
         width: 485px;
         height: 333px;
-        background-image: url(img/gameCenter_logo.svg);
         background-repeat: no-repeat;
         background-size: contain;
         color: #fff;
+        background-image: url(img/gameCenter_logo.svg);
+    }
+
+    &__logo2 {
+        background-image: url(img/game2_logo.svg);
     }
 
 }
